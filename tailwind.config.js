@@ -5,22 +5,27 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      fontFamily: {
-        'barlow': ['Barlow', 'sans-serif'],
-        'fraunces': [ 'Fraunces', 'serif' ],
-        'poppins': [ 'Poppins', 'sans-serif' ],
+      boxShadow: {
+        link: "0  -4px  0 0  rgba( 250, 212,  0,  .7)  inset",
+        under: "0  -4px  0  0  rgba(254, 120,  103,  .7)  inset",
       },
-      backgroundImage: {
-        'hero-section': "url('./images/desktop/image-header.jpg')",
-        'transform': "url('./images/desktop/image-transform.jpg')",
-        'stand-out': "url('./images/desktop/image-stand-out.jpg')",
-        'graphic-design': "url('./images/desktop/image-graphic-design.jpg')",
-        'photography': "url('./images/desktop/image-photography.jpg')",
-        'milkbottles': "url('./images/desktop/image-gallery-milkbottles.jpg')",
-        'orange': "url('./images/desktop/image-gallery-orange.jpg')",
-        'cone': "url('./images/desktop/image-gallery-cone.jpg')",
-        'sugarcubes': "url('./images/desktop/image-gallery-sugarcubes.jpg')",
 
+      fontFamily: {
+        barlow: ["Barlow", "sans-serif"],
+        fraunces: ["Fraunces", "serif"],
+        poppins: ["Poppins", "sans-serif"],
+      },
+
+      backgroundImage: {
+        "hero-section": "url('./images/desktop/image-header.jpg')",
+        transform: "url('./images/desktop/image-transform.jpg')",
+        "stand-out": "url('./images/desktop/image-stand-out.jpg')",
+        "graphic-design": "url('./images/desktop/image-graphic-design.jpg')",
+        photography: "url('./images/desktop/image-photography.jpg')",
+        milkbottles: "url('./images/desktop/image-gallery-milkbottles.jpg')",
+        orange: "url('./images/desktop/image-gallery-orange.jpg')",
+        cone: "url('./images/desktop/image-gallery-cone.jpg')",
+        sugarcubes: "url('./images/desktop/image-gallery-sugarcubes.jpg')",
       },
       colors: {
         // primary colors
@@ -47,7 +52,7 @@ module.exports = {
   variants: {
     extend: {
       variants: {
-        backgroundColor: ['responsive', 'hover', 'focus', 'active', 'before'],
+        backgroundColor: ["responsive", "hover", "focus", "active", "before"],
       },
     },
   },
